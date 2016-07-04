@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Under Construction</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                height: 100%;
+                color: #F7F7F7;
+                font-family: 'Open Sans', sans-serif;
+                background-color: #5D5D5D;
+                text-shadow: 1px 1px 1px #000;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: repeating-linear-gradient(
+                  -55deg,
+                  #FFEB3B,
+                  #FFEB3B 100px,
+                  #333 100px,
+                  #333 200px
+                );
+            }
+            .logo {
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                font-family: Montserrat, sans-serif;
+                text-align: center;
+                font-size: 80px;
+            }
+            .text, .email {
+                font-weight: 100;
+                font-size: 25px;
+                text-align: center;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .email {
+                margin-top: 0px;
+            }
+            .email a {
+                color: #F7F7F7;
+                text-decoration: none;
+            }
+            .from-begin {
+                text-align: center;
+                font-size: 20px;
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                margin-left: -75px;
+                width: 150px;
+            }
+            .from-begin svg {
+                fill: #F7F7F7;
+                height: auto;
+                max-height: 200px;
+                filter: drop-shadow(1px 1px 1px #000);
+                -webkit-filter: drop-shadow(1px 1px 1px #000);
+            }
+            @media (max-width: 799px) {
+                .logo {
+                    font-size: 40px;
+                }
+                .text, .email {
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                .from-begin {
+                    width: 100px;
+                    margin-left: -50px;
+                }
+            }
+            @-webkit-keyframes slide-in {
+                0% { opacity: 0.0; filter: alpha(opacity=0); -webkit-transform: translateY(20px); transform: translateY(20px);}
+                100% { opacity: 1.0; filter: alpha(opacity=100); -webkit-transform: translateY(0px); transform: translateY(0px);}
+            }
+            @keyframes slide-in {
+                0% { opacity: 0.0; filter: alpha(opacity=0); -webkit-transform: translateY(20px); transform: translateY(20px);}
+                100% { opacity: 1.0; filter: alpha(opacity=100); -webkit-transform: translateY(0px); transform: translateY(0px);}
+            }
+            @-webkit-keyframes fade-in {
+                0% { opacity: 0.0; filter: alpha(opacity=0);}
+                100% { opacity: 1.0; filter: alpha(opacity=100);}
+            }
+            @keyframes fade-in {
+                0% { opacity: 0.0; filter: alpha(opacity=0);}
+                100% { opacity: 1.0; filter: alpha(opacity=100);}
+            }
+            .flex>div{
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            .flex>div:nth-of-type(1) {
+                -webkit-animation: slide-in 1.0s forwards;
+                -webkit-animation-delay: 0s;
+                -webkit-animation: slide-in 1.0s forwards;
+                        animation: slide-in 1.0s forwards;
+                -webkit-animation-delay: 0.3s;
+                        animation-delay: 0.3s;
+            }
+            .flex>div:nth-of-type(2), .flex>div:nth-of-type(3) {
+                -webkit-animation: slide-in 1.0s forwards;
+                -webkit-animation-delay: 0s;
+                -webkit-animation: slide-in 1.0s forwards;
+                        animation: slide-in 1.0s forwards;
+                -webkit-animation-delay: 1.5s;
+                        animation-delay: 1.5s;
+            }
+            .flex>div:nth-of-type(4) {
+                -webkit-animation: fade-in 1.0s forwards;
+                -webkit-animation-delay: 0s;
+                -webkit-animation: fade-in 1.0s forwards;
+                        animation: fade-in 1.0s forwards;
+                -webkit-animation-delay: 2.8s;
+                        animation-delay: 2.8s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex">
+            <div class="logo">
+                UNDER CONSTRUCTION
+            </div>
+            <div class="text">
+                Coming Soon!
+            </div>
+            <div class="email">
+                <a href="mailto:info@vrleague.org">info@vrleague.org</a>
+            </div>
+        <div class="from-begin">
+            From<br/>
+            <a href="http://beg.in">
+                <a href="http://immersionarcade.com">
+                    <svg viewBox="0 0 1379 365" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M160.4 182.57c2.374-.822 4.154-2.974 4.658-5.625 3.45-18.556 3.216-38.733-.942-57.415-.367-1.612-1.21-3.05-2.402-4.09-15.63-13.258-38.374-19.766-66.197-21.455-3.48-.21-6.567 2.407-7.227 6.125-4.337 25.064-5.882 52.05-2.376 77.267.495 3.358 2.99 5.947 6.103 6.328 10.454 1.24 18.968.3 27.885.743 2.184.108 5.073-23.794 12.54-23.768 7.467.025 5.35 23.94 7.796 23.817 8.23-.414 14.652-.28 20.163-1.926zm-46.303-60.873c6.83 0 12.37 8.735 12.37 19.49 0 10.758-5.54 19.493-12.37 19.493-6.827 0-12.37-8.735-12.37-19.493 0-10.755 5.543-19.49 12.37-19.49zm32.81 7.346c5.543 0 10.04 7.087 10.04 15.82 0 8.728-4.497 15.817-10.04 15.817-5.538 0-10.04-7.09-10.04-15.818 0-8.732 4.502-15.82 10.04-15.82z"/><text x="218.081" y="600.493" font-family="'Lato-Bold', 'Lato', sans-serif" font-weight="700" font-size="277.627" transform="translate(34.892 -317.4) scale(.88454)">immersion</text><text x="236.124" y="420.731" font-family="'Lato-Bold', 'Lato', sans-serif" font-weight="700" font-size="47.22" transform="translate(-430.965 -838.574) scale(2.85748)">arcade</text><path d="M0 52.932c0-.566.316-1.083.82-1.342L101.056.004v60.443c0 .745-.276 1.463-.773 2.018-3.374 3.765-16.83 18.78-20.417 22.778-.566.633-.88 1.454-.88 2.305l-.138 97.955c0 1.23.65 2.37 1.712 2.992l57.525 33.67c1.183.692 1.752 2.09 1.386 3.41l-38.416 139.168L.82 313.157c-.504-.26-.82-.775-.82-1.342V52.932z"/><path d="M101.055.035l86.213 50.857c.287.176.555.38.792.62.494.502.846 1.14 1.005 1.825.058.248.086.496.097.75.215 13.058.15 26.118 0 39.18-.04 1.238-.35 2.446-.948 3.537-.257.466-.564.9-.905 1.31-4.287 4.89-8.682 9.688-13.025 14.53-.14.165-.27.332-.382.517-.31.508-.47 1.075-.51 1.667-.553 23.095-.425 46.205-.062 69.306.012.23.037.458.09.684.148.628.47 1.21.92 1.67.19.19.4.356.626.504 12.254 7.452 24.823 14.37 37.12 21.75.59.37 1.132.802 1.61 1.313 1.247 1.342 1.99 3.117 2.064 4.945.034.75-.053 1.496-.228 2.224-8.34 31.485-16.203 63.128-26.007 94.188-.22.648-.59 1.226-1.102 1.68-.187.165-.388.31-.6.44l-86.757 51.177 1.468-5.322 83.32-49.15c.007-.005.02-.01.027-.022 10.535-30.756 18.294-62.42 25.95-94.015.077-.34.113-.69.1-1.038-.04-.868-.372-1.714-.94-2.372-.244-.288-.53-.53-.844-.737-12.115-7.617-24.698-14.47-37.047-21.705-.475-.287-.92-.614-1.32-.996-.922-.875-1.605-1.985-1.974-3.2-.187-.62-.282-1.252-.312-1.897-.366-23.1.04-46.208.058-69.312.012-.437.042-.867.123-1.297.184-.985.572-1.93 1.133-2.762.182-.267.382-.52.592-.764 4.35-4.856 8.87-9.567 13.052-14.567.544-.682.845-1.5.876-2.374.145-12.976 0-25.953 0-38.932 0-.01.006-.037-.008-.045-.01-.01-.02-.015-.03-.02L101.054 4.49V.034z"/></svg>
+                </a>
+            </a>
+        </div>
+    </body>
+</html>
