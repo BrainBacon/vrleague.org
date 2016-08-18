@@ -1,0 +1,28 @@
+{
+  "name": "vrleague.org",
+  "version": "0.1.0",
+  "description": "landing page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrainBacon/vrleague.org.git"
+  },
+  "author": "Immersion Arcade <info@immersionarcade.com> (immersionarcade.com)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BrainBacon/vrleague.org/issues"
+  },
+  "homepage": "https://github.com/BrainBacon/vrleague.org#readme",
+  "dependencies": {
+    "frow": "1.0.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-concat": "2.6.0",
+    "gulp-cssnano": "2.1.2",
+    "gulp-sass": "2.3.1",
+    "reset-css": "2.0.2011012603"
+  }
+}
