@@ -22,7 +22,7 @@ html, body {
     height: 100%;
     color: $white;
     font-family: 'Lato', sans-serif;
-    background-color: $grey;
+    background-color: $dark-grey;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -50,9 +50,14 @@ a {
 .header {
     position: relative;
     z-index: 5;
-    background-color: $dark-grey;
+    background-color: $grey;
+    background-image: url(media/hero.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 20%;
     img {
-        width: 100%;
+        padding: 20px;
+        height: 100%;
     }
 }
 .text, .email {
@@ -65,7 +70,7 @@ a {
 }
 .email {
     font-size: 25px;
-    background-color: $dark-grey !important;
+    background-color: $light-grey !important;
     font-weight: 400;
     border-radius: 4px 0 0 4px;
     border: 1px solid transparent;
@@ -73,11 +78,14 @@ a {
     color: $white;
 }
 .card-shadow {
-    background-color: $light-grey;
+    background-color: $grey;
     box-shadow: 0 1px 3px 0 $black;
 }
 .mailing-list {
     padding-top: 40px;
+    .btn {
+        border-radius: 0 4px 4px 0;
+    }
 }
 .btn {
     display: block;
@@ -90,7 +98,7 @@ a {
     cursor: pointer;
     user-select: none;
     border: 1px solid transparent;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     background-color: $blue;
     color: $white;
     height: 2em;
@@ -103,7 +111,7 @@ a {
     .email {
         border-radius: 4px 4px 0 0;
     }
-    .btn {
+    .mailing-list .btn {
         border-radius: 0  0 4px 4px;
     }
 }
@@ -118,7 +126,7 @@ p {
 }
 .frow-container {
     padding-top: 20px;
-    background-color: $grey;
+    background-color: $dark-grey;
     position: relative;
     z-index: 3
 }
@@ -150,4 +158,16 @@ p {
     height:100%;
     width:100%;
     position:absolute;
+}
+.event {
+    background-color: $light-grey;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: $white;
+    }
+    img {
+        width: 100%;
+    }
 }
