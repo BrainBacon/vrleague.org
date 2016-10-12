@@ -2,6 +2,7 @@
 @import '_frow';
 
 $black: #000000;
+$dark: #333132;
 $dark-grey: #212121;
 $grey: #303030;
 $light-grey: #424242;
@@ -10,6 +11,10 @@ $red: #FF1744;
 $light-blue: #E1F5FE;
 $blue: #03A9F4;
 $dark-blue: #01579B;
+$yellow: #FFF200;
+$light-yellow: #FFFF8D;
+$dark-yellow: #FFEA00;
+
 
 $primary-text: 100%;
 $secondary-text: 70%;
@@ -22,7 +27,7 @@ html, body {
     height: 100%;
     color: $white;
     font-family: 'Lato', sans-serif;
-    background-color: $dark-grey;
+    background-color: $black;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -50,15 +55,10 @@ a {
 .header {
     position: relative;
     z-index: 5;
-    background-color: $grey;
-    background-image: url(media/hero.jpg);
+    background-color: $dark;
     background-size: cover;
     text-align: center;
-    height: 20%;
-    img {
-        padding: 20px;
-        height: 100%;
-    }
+    width: 100%;
 }
 .text, .email {
     font-weight: 100;
@@ -78,7 +78,7 @@ a {
     color: $white;
 }
 .card-shadow {
-    background-color: $grey;
+    background-color: $dark;
     box-shadow: 0 1px 3px 0 $black;
 }
 .mailing-list {
@@ -99,13 +99,14 @@ a {
     user-select: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: $blue;
-    color: $white;
+    background-color: $yellow;
+    color: $dark;
     height: 2em;
     -webkit-appearance: none;
 }
 .btn:hover {
-    background-color: $dark-blue;
+    background-color: $light-yellow;
+    color: $dark;
 }
 @media (max-width: 980px) {
     .email {
@@ -126,7 +127,7 @@ p {
 }
 .frow-container {
     padding-top: 20px;
-    background-color: $dark-grey;
+    background-color: $black;
     position: relative;
     z-index: 3
 }
@@ -165,7 +166,7 @@ p {
         text-decoration: none;
     }
     a:hover {
-        color: $white;
+        color: $dark;
     }
     img {
         width: 100%;
